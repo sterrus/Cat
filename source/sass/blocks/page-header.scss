@@ -1,0 +1,16 @@
+@media (min-width: $tablet-width) {
+	.page-header__wrapper {
+		padding-right: 30px;
+		padding-left: 30px;
+
+	}
+}
+
+@media (min-width: $desktop-width) {
+  .page-header__wrapper {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+}

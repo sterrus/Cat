@@ -1,0 +1,126 @@
+.catalog-item {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	padding: 0 20px 24px;
+	border-bottom: 1px solid #ededed;
+
+	&:first-of-type {
+		border-top: 1px solid #ededed;
+	}
+
+	&--add {
+		position: relative;
+		padding-top: 57px;
+
+		&::before {
+			content: "";
+			position: absolute;
+			top: 26px;
+			left: 50%;
+			width: 30px;
+			height: 30px;
+			background-image: url("../img/icon-plus-mobile.svg");
+			background-repeat: no-repeat;
+			background-position: center;
+			opacity: 0.2;
+			transform: translateX(-50%) translateZ(0);
+			will-change: transform;
+		}
+
+		form {
+			display: flex;
+			flex-grow: 1;
+		}
+
+		.catalog-item__wrapper {
+			flex-grow: 1;
+		}
+
+		.catalog-item__inner {
+			width: 100%;
+			padding-bottom: 0;
+		}
+
+		.catalog-item__title {
+			width: 100%;
+			margin-bottom: 8px;
+			padding: 0 20px;
+			text-align: center;
+		}
+
+		.catalog-item__descr {
+			margin: 0;
+			margin-bottom: 21px;
+			padding: 0 20px;
+			font-family: "Arial", sans-serif;
+			font-size: 12px;
+			line-height: 16px;
+			color: $color-gray;
+			text-align: center;
+		}
+	}
+}
+
+.catalog-item__inner {
+	width: 50%;
+	padding-top: 22px;
+	padding-bottom: 20px;
+}
+
+.catalog-item__pic-wrapper {
+	display: flex;
+	justify-content: center;
+    align-items: center;
+    order: -1;
+    width: 50%;
+    outline: none;
+}
+
+.catalog-item__pic {
+	display: block;
+}
+
+.catalog-item__title {
+	width: 57%;
+	margin: 0;
+	margin-bottom: 12px;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 20px;
+	color: $color-dark-gray;
+	text-transform: uppercase;
+
+	a {
+		color: $color-dark-gray;
+		text-decoration: none;
+		outline: none;
+	}
+} 
+
+.catalog-item__info {
+	width: 100%;
+	border-collapse: collapse;
+	border-spacing: 0;
+
+	td {
+		padding: 0;
+		font-family: "Arial", sans-serif;
+		font-size: 12px;
+		line-height: 16px;
+		color: $color-gray;
+
+		&:last-child {
+			text-align: right;
+		}
+	}
+}
+
+.catalog-item__btn {
+	display: block;
+	padding-top: 10px;
+	padding-bottom: 8px;
+	width: 100%;
+	font-size: 16px;
+	line-height: 20px;
+}
